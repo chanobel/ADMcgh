@@ -28,6 +28,25 @@ body, html {height: 100%}
   background-size: cover;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff; /* Línea azul en la parte inferior del encabezado */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 20%; /* Borde redondeado para el logo */
+}
+
+.title-container {
+    margin-right: auto;
+}
+
+
 .redes-flotantes {
 position: fixed;
 right: 8px;
@@ -931,8 +950,17 @@ max-width: 100%
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script> 
+<script src="hora.js"></script>
 <div id="app">
-    <nav class="navigations"><font color="white" height="80" style="bold">CreditCard GEN | ChumoGH </font></nav>
+    <!-- <nav class="navigations"><font color="white" height="80" style="bold">CreditCard GEN | ChumoGH </font></nav> -->
+	    <div class="header">
+            <div class="title-container">
+                <h1>CCGen ChumoGH ING.</h1>
+                <p>Fecha: ${FECHA} - ${HORA}</p>
+				 <div id="clock"></div>
+            </div>
+            <img src="icon.PNG" alt="Logo" class="logo">
+        </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -958,7 +986,7 @@ max-width: 100%
  <center> 
    <div class="w3-display-bottomleft w3-padding-large">
   		<p class="copyright">
-            2023<br />
+            2024<br />
             Diseñador web: <a href="http://t.me/ChumoGH" target="_blank">@ChumoGH</a><br />
             <a style="text-decoration:none;" href="https://shoppy.gg/@ChumoGH/" target="_blank"> </a> &copy; - Todos los derechos reservados
         </p>
